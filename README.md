@@ -1,17 +1,26 @@
-# ABCRetail Business Hub
+# Bright Future Library
 
-A browser-based prototype for managing ABCRetail's retail operations. It uses sample data and does not connect to a server or database.
+A responsive community-library website built with React functional components, JSX, and CSS.
 
 ## Run locally
 
-Open `index.html` in a modern web browser. No build tools or dependencies are required.
+Install dependencies and start the Vite development server:
 
-## Prototype features
+```sh
+npm install
+npm run dev
+```
 
-- Business overview with sales, order, and inventory summaries
-- Inventory search, low-stock filtering, and a receive-stock interaction
-- Order search, status filtering, and a basic fulfilment workflow
-- Customer lookup and CSV exports for orders and customers
-- Responsive layout for desktop and mobile screens
+Open the local URL printed by Vite. Create a production build with `npm run build`.
 
-Changes made in the demo are held in the current page only and reset when it is reloaded.
+## Features
+
+- Search books by title, author, or category; filter by genre.
+- Open book details, borrow and return books, and view your borrowed titles.
+- Borrowing state is saved in local browser storage, with a five-book limit.
+- Review upcoming events and register for a seat with an in-page confirmation.
+- Browse library services, read the library mission, and view contact details.
+- Submit the contact form with required name, valid email, and a minimum-length message validation.
+- Responsive navigation and layouts for mobile and desktop.
+
+The catalog, events, and contact details are sample content and are not connected to a library database. Borrowed books are saved in browser storage. Contact form submissions are validated in the browser but are not sent to a server; use the displayed email address to contact the library.
